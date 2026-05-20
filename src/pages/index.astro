@@ -145,22 +145,6 @@ const {
           <!-- Divider -->
           <div class="w-full h-px bg-[#f0ece4]/10 mb-8"></div>
 
-          <!-- Principles / ethos list -->
-          <div class="space-y-4">
-            {[
-              { num: "01", label: "Performance-first architecture" },
-              { num: "02", label: "Accessibility as a baseline" },
-              { num: "03", label: "Shipping beats perfection" },
-            ].map(({ num, label }) => (
-              <div class="flex items-center gap-4 group/item cursor-default">
-                <span class="text-[10px] text-[#e8ff6b]/50 font-mono">{num}</span>
-                <span class="w-4 h-px bg-[#f0ece4]/20 group-hover/item:w-8 group-hover/item:bg-[#e8ff6b]/50 transition-all duration-300"></span>
-                <span class="text-sm text-[#f0ece4]/50 group-hover/item:text-[#f0ece4]/80 transition-colors duration-200">{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <!-- CTA -->
         <div class="pt-10">
           <a
