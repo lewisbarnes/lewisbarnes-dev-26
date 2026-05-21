@@ -27,7 +27,7 @@ const {
   location = "Peterborough, UK",
   imageUrl = "https://media.licdn.com/dms/image/v2/D4E03AQHkVxUOFka9WQ/profile-displayphoto-crop_800_800/B4EZ3OlM3qGYAI-/0/1777287353354?e=1781136000&v=beta&t=YERj1u7Ht6HuIrKyzDvTjc4YHYvvTZq-I3HB1js9Z6M",
   imageAlt = "Lewis Barnes – Full Stack Engineer",
-  bio = "Currently a Software Developer at Taylor Rose, building the tools that make legal operations run smoother. Working at the intersection of complex business logic and modern platforms, I turn legacy workflows into streamlined, user-centric products — shipping as part of a high-performance agile team.",
+  bio = "Software Developer at Taylor Rose, modernising legal operations by migrating legacy architecture to full cloud-based platforms — including Salesforce integrati…Software Developer at Taylor Rose, modernising legal operations by migrating legacy architecture to full cloud-based platforms — including Salesforce integration — and turning complex requirements into streamlined, user-centric products, shipping as part of a high-performance agile team.",
   skills = ["TypeScript", "React", "Node.js", "PostgreSQL", "Astro", "C#", "Salesforce"],
   availableForWork = false,
   email = "hello@lewisbarnes.dev",
@@ -40,7 +40,7 @@ const {
 <Layout>
 <section class="hero-layout w-full min-h-screen bg-[#0e0e0e] text-[#f0ece4] font-mono">
   <!-- Subtle grid background -->
-  <div class="absolute inset-0 bg-[linear-gradient(rgba(240,236,228,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(240,236,228,0.03)_1px,transparent_1px)] bg-[size:80px_80px] pointer-events-none"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(rgba(240,236,228,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(240,236,228,0.03)_1px,transparent_1px)] bg-size-[80px_80px] pointer-events-none"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 md:py-28">
 
@@ -54,9 +54,9 @@ const {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#f0ece4]/10">
 
       <!-- ─── COLUMN 1: Role & Identity ─── -->
-      <div class="bg-[#0e0e0e] p-10 flex flex-col justify-between min-h-[520px] group relative overflow-hidden">
+      <div class="bg-[#0e0e0e] p-10 flex flex-col justify-between min-h-130 group relative overflow-hidden">
         <!-- Hover accent line -->
-        <div class="absolute top-0 left-0 w-0 h-[2px] bg-[#e8ff6b] transition-all duration-500 group-hover:w-full"></div>
+        <div class="absolute top-0 left-0 w-0 h-0.5 bg-[#e8ff6b] transition-all duration-500 group-hover:w-full"></div>
 
         <div>
           <!-- Status badge -->
@@ -108,7 +108,7 @@ const {
       </div>
 
       <!-- ─── COLUMN 2: Developer Image ─── -->
-      <div class="bg-[#0e0e0e] relative overflow-hidden min-h-[520px] group">
+      <div class="bg-[#0e0e0e] relative overflow-hidden min-h-130 group">
         <!-- Image fills column -->
         <img
           src={imageUrl}
@@ -117,7 +117,7 @@ const {
         />
 
         <!-- Overlay gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-[#0e0e0e]/20 to-transparent"></div>
+        <div class="absolute inset-0 bg-linear-to-t from-[#0e0e0e] via-[#0e0e0e]/20 to-transparent"></div>
 
         <!-- Name label at bottom -->
         <div class="absolute bottom-0 left-0 right-0 p-10">
@@ -132,9 +132,9 @@ const {
       </div>
 
       <!-- ─── COLUMN 3: Bio & Ethos ─── -->
-      <div class="bg-[#0e0e0e] p-10 flex flex-col justify-between min-h-[520px] group relative overflow-hidden">
+      <div class="bg-[#0e0e0e] p-10 flex flex-col justify-between min-h-130 group relative overflow-hidden">
         <!-- Hover accent line -->
-        <div class="absolute top-0 right-0 w-0 h-[2px] bg-[#e8ff6b] transition-all duration-500 group-hover:w-full origin-right"></div>
+        <div class="absolute top-0 right-0 w-0 h-0.5 bg-[#e8ff6b] transition-all duration-500 group-hover:w-full origin-right"></div>
 
         <div>
           <!-- Section label -->
