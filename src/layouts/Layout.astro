@@ -1,27 +1,23 @@
 ---
 import SpeedInsights from "@vercel/speed-insights/astro"
+import "../styles/global.css";
+
+const { title = "Lewis Barnes | Full Stack Engineer", description = "Portfolio of Lewis Barnes — software developer in Peterborough building LegalTech." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#fff8ec" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Lewis Barnes | Full Stack Engineer</title>
+		<meta name="description" content={description} />
+		<title>{title}</title>
 	</head>
-	<body>
+	<body class="min-h-screen bg-cream font-sans text-ink antialiased selection:bg-punch selection:text-white">
 		<slot />
 		<SpeedInsights/>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
